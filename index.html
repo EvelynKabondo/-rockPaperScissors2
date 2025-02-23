@@ -9,10 +9,15 @@
     <title>Rock Paper Scissors</title>
     <main>
         <script>
-            var userprompt = prompt("ROCK, PAPER, SCISSORS?");
+            function countwinner(){
+           
+            for(var count=1;count<5;count++){
+
+            var userprompt = prompt("ROCK, PAPER, SCISSORS?").toUpperCase();   
+
             var stringlist = ["ROCK","PAPER","SCISSORS"];
             var comchoice = stringlist[Math.floor(Math.random() * stringlist.length)];
-            
+
             alert("Computer chose: " + comchoice);
            
            //setting the conditions
@@ -22,7 +27,7 @@
 
             else if( 
 
-            (userprompt==="ROCK" && comchoice==="PAPER") ||
+            (userprompt==="PAPER" && comchoice==="ROCK") ||
 
             (userprompt==="SCISSORS" && comchoice==="PAPER") ||
 
@@ -33,7 +38,10 @@
             else{
                 alert("You Lose")
             }
+        }
+    }
             
+            //implement a loop to execute the code five times
            
 
         </script>
