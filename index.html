@@ -9,7 +9,9 @@
     <title>Rock Paper Scissors</title>
     <main>
         <script>
+            alert("welcome to the ROCK,PAPER,SCISSORS game");
             function countwinner(){
+            
            
             for(var count=1;count<5;count++){
 
@@ -27,22 +29,39 @@
 
             else if( 
 
-            (userprompt==="PAPER" && comchoice==="ROCK") ||
+            (userprompt==="ROCK" && comchoice==="PAPER") ||
 
             (userprompt==="SCISSORS" && comchoice==="PAPER") ||
 
             (userprompt==="ROCK" && comchoice==="SCISSORS")){
 
             alert("You win")}
+                else{
+            
+            alert("Computer wins")
+            }
+            var gamerounds = 5;
+            var userscore = 0;
+            var computerscore = 0;
+            if(userscore>computerscore){
 
+            
+             alert("Round " + count + ": You win!");
+                    userscore++;
+            } 
             else{
-                alert("You Lose")
+                    alert("Round " + count + ": Computer wins!");
+                    compscore++;
+                }
             }
         }
-    }
+    
+    
+
+    countwinner();
             
-            //implement a loop to execute the code five times
-           
+            
+        
 
         </script>
     </main>
