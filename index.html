@@ -29,7 +29,7 @@
 
             else if( 
 
-            (userprompt==="ROCK" && comchoice==="PAPER") ||
+            (userprompt==="PAPER" && comchoice==="ROCK") ||
 
             (userprompt==="SCISSORS" && comchoice==="PAPER") ||
 
@@ -49,10 +49,15 @@
              alert("Round " + count + ": You win!");
                     userscore++;
             } 
-            else{
+            else if(userscore<computerscore){
+
+            
                     alert("Round " + count + ": Computer wins!");
                     compscore++;
                 }
+            else(userscore=computerscore){
+                alert("its a tie")
+            }
             }
         }
     
